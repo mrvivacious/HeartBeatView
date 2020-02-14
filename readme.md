@@ -1,4 +1,34 @@
-HeartBeatView
+Heart, extended from HeartBeatView by https://github.com/scottyab/HeartBeatView
+=============
+
+Heart is a toy I made for Valentine's Day.
+
+<b>!! Requires a heart rate sensor on your device !!</b>
+
+<ul>
+<li>To best use: </li>
+<li>Place finger on heart rate sensor</li>
+<li>Open the app</li>
+<li>Wait (12 seconds lol)</li>
+<li>Have fun ~</li>
+</ul>
+
+
+https://github.com/scottyab/HeartBeatView
+
+This person scottyab is responsible for the heart animations and controllers<br>
+Huge props, made it easy for me to attach a sensor listener and simulate
+ a person's heartbeat
+
+Happy Valentine's Day February 14 2020<br>
+💜 Vivek Bhookya @mrvivacious
+
+Below is cloned from https://github.com/scottyab/HeartBeatView !!!!
+
+<hr>
+
+
+HeartBeatView by https://github.com/scottyab/HeartBeatView
 =============
 
 Simple custom view of a beating heart using scaling animation.
