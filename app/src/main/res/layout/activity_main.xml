@@ -2,7 +2,9 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/layout">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,45 +15,47 @@
         android:paddingRight="@dimen/activity_horizontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Simple custom view of a beating heart using scaling animation" />
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Simple custom view of a beating heart using scaling animation" />-->
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_margin="10dp"
-            android:background="@color/colorPrimary" />
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:background="@color/colorPrimary" />-->
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
 
-            <ToggleButton
-                android:id="@+id/toggleHeart1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="heart1onClick"
-                android:textOff="Stop"
-                android:textOn="Start" />
+<!--            <ToggleButton-->
+<!--                android:id="@+id/toggleHeart1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="heart1onClick"-->
+<!--                android:textOff="Stop"-->
+<!--                android:textOn="Start" />-->
 
-            <com.scottyab.HeartBeatView
-                android:id="@+id/heartbeat"
-                android:layout_width="72dp"
-                android:layout_height="72dp" />
+<!--            <com.scottyab.HeartBeatView-->
+<!--                android:id="@+id/heartbeat"-->
+<!--                android:layout_width="72dp"-->
+<!--                android:layout_height="72dp" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
-            android:text="Shows varying the colour via tint and using setDuration by BPM" />
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:text="" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,67 +63,69 @@
             android:layout_gravity="center_horizontal"
             android:orientation="horizontal">
 
-            <ToggleButton
-                android:id="@+id/toggleHeart2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="heart2onClick"
-                android:textOff="Stop"
-                android:textOn="Start"
-                app:buttonTint="@android:color/holo_blue_bright" />
+<!--            <ToggleButton-->
+<!--                android:id="@+id/toggleHeart2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="heart2onClick"-->
+<!--                android:textOff="Stop"-->
+<!--                android:textOn="Start"-->
+<!--                app:buttonTint="@android:color/holo_blue_bright" />-->
 
             <com.scottyab.HeartBeatView
                 android:id="@+id/heartbeat2"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                android:tint="@android:color/holo_blue_bright"
+                android:layout_width="match_parent"
+                android:layout_height="385dp"
+                android:tint="@android:color/white"
                 app:duration="100" />
 
         </LinearLayout>
 
         <TextView
             android:id="@+id/bpm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="382dp"
+            android:layout_height="246dp"
             android:labelFor="@+id/beatsPerMinSeek"
-            android:text="BPM: 50" />
+            android:text="Don't move! :)"
+            android:textAlignment="center"
+            android:textSize="32dp" />
 
-        <SeekBar
-            android:id="@+id/beatsPerMinSeek"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="16dp"
-            android:progressTint="@android:color/holo_blue_bright"
-            android:thumbTint="@android:color/holo_blue_bright" />
+        <!--        <SeekBar-->
+<!--            android:id="@+id/beatsPerMinSeek"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="16dp"-->
+<!--            android:progressTint="@android:color/holo_blue_bright"-->
+<!--            android:thumbTint="@android:color/holo_blue_bright" />-->
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="10dp"
-            android:text="Increased scale factor" />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingTop="10dp"-->
+<!--            android:text="Increased scale factor" />-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:orientation="horizontal">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:orientation="horizontal">-->
 
-            <ToggleButton
-                android:id="@+id/toggleHeart3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="heart3onClick"
-                android:textOff="Stop"
-                android:textOn="Start" />
+<!--            <ToggleButton-->
+<!--                android:id="@+id/toggleHeart3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:onClick="heart3onClick"-->
+<!--                android:textOff="Stop"-->
+<!--                android:textOn="Start" />-->
 
-            <com.scottyab.HeartBeatView
-                android:id="@+id/heartbeat3"
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                app:scaleFactor="0.5" />
+<!--            <com.scottyab.HeartBeatView-->
+<!--                android:id="@+id/heartbeat3"-->
+<!--                android:layout_width="72dp"-->
+<!--                android:layout_height="72dp"-->
+<!--                app:scaleFactor="0.5" />-->
 
-        </LinearLayout>
+<!--        </LinearLayout>-->
 
     </LinearLayout>
 </ScrollView>
