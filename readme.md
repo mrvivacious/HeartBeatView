@@ -17,8 +17,7 @@ Heart is a toy I made for Valentine's Day.
 https://github.com/scottyab/HeartBeatView
 
 This person scottyab is responsible for the heart animations and controllers<br>
-Huge props, made it easy for me to attach a sensor listener and simulate
- a person's heartbeat
+Huge props, made it easy for me to attach a sensor listener and beyond
 
 Happy Valentine's Day February 14 2020<br>
 💜 Vivek Bhookya @mrvivacious
